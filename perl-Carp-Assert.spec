@@ -2,9 +2,8 @@
 %define	name	perl-%{realname}
 %define modprefix Carp
 
-%define	version	0.18
-%define	rel	2
-%define	release	%mkrel %{rel}
+%define	version	0.20
+%define	release	%mkrel 1
 
 Summary:	Carp::Assert - executable comments
 Name:		%{name}
