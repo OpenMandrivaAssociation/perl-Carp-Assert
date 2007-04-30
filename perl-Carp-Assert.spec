@@ -29,9 +29,6 @@ this and go straight to the FUNCTIONS section.
 %prep
 %setup -q -n %{realname}-%{version} 
 
-# pod2test is not provided by Test-Inline anymore
-perl -pi -e "s|pod2test|/bin/true|g" Makefile.PL
-
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
 %__make
@@ -51,6 +48,4 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/%{modprefix}
 %{_mandir}/*/*
-
-
 
