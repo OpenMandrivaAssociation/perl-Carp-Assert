@@ -19,6 +19,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Inline)
 BuildRequires:	perl(Test::More) >= 0.40
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Carp::Assert is intended for a purpose like the ANSI C library assert.h.
