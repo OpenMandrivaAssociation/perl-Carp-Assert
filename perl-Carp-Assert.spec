@@ -3,7 +3,7 @@
 %define modprefix Carp
 
 %define	version	0.20
-%define	release	%mkrel 1
+%define	release	%mkrel 3
 
 Summary:	Carp::Assert - executable comments
 Name:		%{name}
